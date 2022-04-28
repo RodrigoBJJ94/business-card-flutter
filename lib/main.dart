@@ -1,12 +1,11 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,11 +17,11 @@ class App extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50,
                 backgroundImage: AssetImage('images/Avatar.jpg'),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.fromLTRB(0, 5, 0, 10),
                 child: Text(
                   'Rodrigo Brentano',
@@ -33,7 +32,7 @@ class App extends StatelessWidget {
                       fontFamily: 'Pacifico'),
                 ),
               ),
-              Text(
+              const Text(
                 'MOBILE DEVELOPER',
                 style: TextStyle(
                     fontSize: 22,
@@ -42,10 +41,10 @@ class App extends StatelessWidget {
                     letterSpacing: 2.5),
               ),
               Container(
-                margin: EdgeInsets.only(top: 220),
+                margin: const EdgeInsets.only(top: 220),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Icon(
                       Icons.whatsapp,
                       size: 22,
@@ -62,10 +61,10 @@ class App extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 10),
+                margin: const EdgeInsets.only(top: 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Icon(
                       Icons.email,
                       size: 22,
@@ -82,10 +81,10 @@ class App extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 10),
+                margin: const EdgeInsets.only(top: 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Icon(
                       Icons.work,
                       size: 22,
